@@ -25,5 +25,5 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name] = _favoriteNumber;
 	}
 
-	Person public pat = Person({favoriteNumber: 7, name: "Pat"});
+
 }
