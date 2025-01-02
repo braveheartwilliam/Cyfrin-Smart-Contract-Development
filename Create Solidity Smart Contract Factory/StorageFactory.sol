@@ -29,7 +29,18 @@ contract SimpleStorage {
 }
 
 contract StorageFactory{
-    function createSimpleStorageContract() public{
+	// // example declaration and structure
+	//uint256 public favoriteNumber
+	//type visibility name
 
-    }
+	SimpleStorage public simpleStorage;
+	//  type scope variableName
+
+	
+
+    function createSimpleStorageContract() public{
+simpleStorage = new SimpleStorage();    
+}
+
+
 }

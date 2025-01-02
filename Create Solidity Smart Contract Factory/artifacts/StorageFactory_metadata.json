@@ -11,6 +11,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simpleStorage",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -41,11 +54,11 @@
 	},
 	"sources": {
 		"Create Solidity Smart Contract Factory/StorageFactory.sol": {
-			"keccak256": "0x562e50e3c57a8ec064d19baf198373109d846fff36551e78f0e2f1f873377e5b",
+			"keccak256": "0xfa410184f8bffdbffd5c8cdf9bee8bddc276e15997dbc4633e247470135d3a71",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://1b2af70a70c1ccefac92d915c93a7bb741f3e06c1e474c9275d6585c73a5ad62",
-				"dweb:/ipfs/QmSw1Qomy5dGgH3FZUfbL1h7m5e2Qwh8drnY2kkLQBVXst"
+				"bzz-raw://cc0a8894a0df78684b23112d860a790a3cfc71bbcf59b13940663f52c0f3f804",
+				"dweb:/ipfs/QmQYaH8YrT3Rz4H8a1B9BmSDXYCWEcwauSjYxRJU7vCkd8"
 			]
 		}
 	},
