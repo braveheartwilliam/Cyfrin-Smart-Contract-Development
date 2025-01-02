@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Create Solidity Smart Contract/SimpleStorage.sol": "SimpleStorage"
+			"Contracts/SimpleStorage.sol": "SimpleStorage"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -120,7 +120,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Create Solidity Smart Contract/SimpleStorage.sol": {
+		"Contracts/SimpleStorage.sol": {
 			"keccak256": "0x82819b19e7c91976b1341f1944959d29d0ca2f7959924226271c80a7dad70cba",
 			"license": "MIT",
 			"urls": [
