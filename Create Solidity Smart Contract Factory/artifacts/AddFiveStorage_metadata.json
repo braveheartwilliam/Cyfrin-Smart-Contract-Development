@@ -108,13 +108,13 @@
 		"compilationTarget": {
 			"Create Solidity Smart Contract Factory/AddFiveStorage.sol": "AddFiveStorage"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []

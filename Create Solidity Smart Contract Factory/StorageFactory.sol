@@ -1,53 +1,46 @@
 // SPDX-License-Identifier:MTT
 pragma solidity ^0.8.24;
 
-//import "../Create Solidity Smart Contract/SimpleStorage.sol";
+contract SimpleStorage {
+	uint256 myFavoriteNumber; // 0
+	uint256[] listOfFavoriteNumbers;
+	struct Person {
+		uint256 favoriteNumber;
+		string name;
+	}
+	Person[] public listOfPeople;
+    mapping(string => uint256) public nameToFavoriteNumber;
 
-import {SimpleStorage} from "../Create Solidity Smart Contract/SimpleStorage.sol";
+	function store(uint256 _favoriteNumber) public {
+		myFavoriteNumber = _favoriteNumber;
+	}
 
-// Use "Named Imports" as above
+	function retrieve() public view returns (uint256) {
+		return myFavoriteNumber;
+	}
 
-contract StorageFactory {
-    // // example declaration and structure
-    //uint256 public favoriteNumber
-    //type visibility name
+	function addPerson(string memory _name, uint256 _favoriteNumber) public {
+		//listOfPeople.push(_name, _favoriteNumber);
+		listOfPeople.push(Person(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
+	}
 
-    //SimpleStorage public simpleStorage;
 
-    SimpleStorage[] public listOfSimpleStorageContracts;
+}
 
-    //  type scope variableName
+contract StorageFactory{
+	// // example declaration and structure
+	//uint256 public favoriteNumber
+	//type visibility name
 
-    function createSimpleStorageContract() public {
-        //simpleStorage = new SimpleStorage();
-        SimpleStorage newSimpleStorageContract = new SimpleStorage();
-        listOfSimpleStorageContracts.push(newSimpleStorageContract);
-    }
+	SimpleStorage public simpleStorage;
+	//  type scope variableName
 
-    function sfStore(
-        uint256 _simpleStorageIndex,
-        uint256 _newSimpleStorageNumber
-    ) public {
-        // Address
-        //ABI  - Application Binary Interface (technically a lie, you just need the function selector)
-        //SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[
-        //     _simpleStorageIndex
-        // ];
-        //mySimpleStorage.store(_newSimpleStorageNumber);
-        listOfSimpleStorageContracts[_simpleStorageIndex].store(
-            _newSimpleStorageNumber
-        );
-    }
+	
 
-    function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
-        //SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[
-        //     _simpleStorageIndex
-        //];
+    function createSimpleStorageContract() public{
+simpleStorage = new SimpleStorage();    
+}
 
-        //return mySimpleStorage[
-        //           _simpleStorageIndex
-        //      ].retrieve();
 
-        return listOfSimpleStorageContracts[_simpleStorageIndex].retrieve();
-    }
 }
