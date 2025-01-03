@@ -13,8 +13,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "simpleStorage",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfSimpleStorageContracts",
 				"outputs": [
 					{
 						"internalType": "contract SimpleStorage",
@@ -23,6 +29,43 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfGet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSimpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -41,24 +84,32 @@
 		"compilationTarget": {
 			"Create Solidity Smart Contract Factory/StorageFactory.sol": "StorageFactory"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"Create Solidity Smart Contract Factory/StorageFactory.sol": {
-			"keccak256": "0xfa410184f8bffdbffd5c8cdf9bee8bddc276e15997dbc4633e247470135d3a71",
+			"keccak256": "0x89239b7c7571f1208a6aeaa4fdd3b609252f6d65d1fdb37beabbd936c1639928",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://cc0a8894a0df78684b23112d860a790a3cfc71bbcf59b13940663f52c0f3f804",
-				"dweb:/ipfs/QmQYaH8YrT3Rz4H8a1B9BmSDXYCWEcwauSjYxRJU7vCkd8"
+				"bzz-raw://3e1538eb334b1519983badb85f47b9da0338d58da9bb752320d29d0cdf37adba",
+				"dweb:/ipfs/QmUV1kZyuPJHbGTZe2RWphhvYDxYKHsqpDv3aUBEvuQ24E"
+			]
+		},
+		"Create Solidity Smart Contract/SimpleStorage.sol": {
+			"keccak256": "0x82819b19e7c91976b1341f1944959d29d0ca2f7959924226271c80a7dad70cba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07f500c34c98a820670bddda81556c849ab7a1d35194f6cbe74970d5dba12803",
+				"dweb:/ipfs/QmdkWQ1h4nbBnFfaQNreU6eFzLDtcc4A9uN4GmpW9sYNN6"
 			]
 		}
 	},
