@@ -6,10 +6,15 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "funder",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -17,7 +22,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "amountFunded",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -51,51 +56,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "getConversionRate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getVersion",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "minimumUSD",
 				"outputs": [
@@ -103,6 +63,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -152,11 +125,19 @@
 			]
 		},
 		"FundMe/FundMe.sol": {
-			"keccak256": "0x199fc921582eb59cb21e9d8b87d5a06dffa45062516ac7e35520306cacfc07c7",
+			"keccak256": "0xc150eebb1899c3d29ec497ca066a51ee82e444aa01667fa8e2197c077dec786a",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://3d52950ae5762ffec0f08c07df22fcd152e09efba6921d22cbfbe3ba3e3029ea",
-				"dweb:/ipfs/QmWCtLSVtDp6owz8cWtsFhJeEiCpwBmnQKQsMJyh5auzD6"
+				"bzz-raw://e9dff4beb16ce82d31452c0445406cc3103243ba5ab73fd5ee1687e9b4789432",
+				"dweb:/ipfs/QmRxt4VrFibVSnTYTGSxo4yWFh1CZ9z6LzDxNRUUPKbXzQ"
+			]
+		},
+		"FundMe/PriceConverter.sol": {
+			"keccak256": "0xa89d09fb66e5342b36f66a780fc9f610d1b67b7b9a9367882462792b9de7521b",
+			"license": "MTT",
+			"urls": [
+				"bzz-raw://7bce93e7855a5409c9b1dbb93fc412742fc3e628f0d8ba3fcf32d938f6196c63",
+				"dweb:/ipfs/QmQ119HYTStrFFmDwfXDDGJ61z4TSPc4igMC16F2QhYiiF"
 			]
 		}
 	},
