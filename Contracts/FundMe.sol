@@ -9,18 +9,22 @@ pragma solidity ^0.8.24;
 // 'XXX' at end to prevent duplicate declaration
 
 import {PriceConverter} from "./PriceConverter.sol";
+error NotOwner();
 
 contract FundMe {
     using PriceConverter for uint256; // converts all data to uint256
 
-    uint256 public minimumUSD = 5 * 1e18; // or 5e18
+    //uint256 public minimumUSD = 5 * 1e18; // or 5e18
+
+    uint256 public constant MINIMUM_USD = 5 * 1e18; // SAVES GAS
 
     address[] public funders;
+    uint256 public priceVersion = PriceConverter.getVersion();
     mapping(address => uint256) public addressToAmountFunded;
-    address public owner;
+    address public immutable i_owner;
 
     constructor() {
-        owner = msg.sender; // original establishment of contract on blockchain by creator that deployed the contract
+        i_owner = msg.sender; // original establishment of contract on blockchain by creator that deployed the contract
     }
 
     function fund() public payable {
@@ -28,13 +32,14 @@ contract FundMe {
 
         // require(getConversionRate(msg.value) >= minimumUSD, "didn't sent enough Wei"); // 1e18 = 1 ETH = 1000000000000000000 wei = 1 * 10**18
         require(
-            msg.value.getConversionRate() >= minimumUSD,
+            msg.value.getConversionRate() >= MINIMUM_USD,
             "didn't sent enough Wei"
         ); // 1e18 = 1 ETH = 1000000000000000000 wei = 1 * 10**18
         funders.push(msg.sender);
         //addressToAmountFunded[msg.sender] = addressToAmountFunded[msg.sender] + msg.value;
         addressToAmountFunded[msg.sender] += msg.value;
     }
+    
 
     function withdraw() public onlyOwner {
         // for loop
@@ -70,8 +75,22 @@ contract FundMe {
         }("");
         require(callSuccess, "call failed");
     }
+
     modifier onlyOwner() {
-        require(msg.sender == owner, "Sender is not owner"); // message sender must be owner
+        //require(msg.sender == i_owner, "Sender is not owner"); // message sender must be owner
+
+        //The following replaces above and uses less gas.  Note: NotOwner defined outside of contract with type "error"
+        if (msg.sender == i_owner) {
+            revert NotOwner();
+        }
+
         _; // if is the owner, execute the remainder of the code in the function
+    }
+
+    receive() external payable {
+        fund();
+    }
+    fallback() external payable {
+        fund();
     }
 }

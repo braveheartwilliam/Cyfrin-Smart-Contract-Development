@@ -9,8 +9,8 @@ library PriceConverter {
         // ABI
 
         AggregatorV3Interface priceFeed = AggregatorV3Interface(
-            0x694AA1769357215DE4FAC081bf1f309aDC325306
-        );  // address for Sepolia testnet
+            0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF
+        ); // address for ZKsync Sepolia testnet
         (, int256 price, , , ) = priceFeed.latestRoundData();
         // price of ETH in terms of USD
         // doesn't include a decimal so 200000000000 is 2000.00000000
@@ -30,7 +30,7 @@ library PriceConverter {
 
     function getVersion() internal view returns (uint256) {
         return
-            AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306)
+            AggregatorV3Interface(0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF)
                 .version();
     }
 }

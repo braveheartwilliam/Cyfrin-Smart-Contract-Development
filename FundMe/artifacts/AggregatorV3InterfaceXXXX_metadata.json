@@ -130,7 +130,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FundMe/FundMe.sol": "AggregatorV3InterfaceXXXX"
+			"FundMe/FundMe_V1.sol": "AggregatorV3InterfaceXXXX"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -152,7 +152,7 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"FundMe/FundMe.sol": {
+		"FundMe/FundMe_V1.sol": {
 			"keccak256": "0x199fc921582eb59cb21e9d8b87d5a06dffa45062516ac7e35520306cacfc07c7",
 			"license": "MTT",
 			"urls": [

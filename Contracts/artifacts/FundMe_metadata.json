@@ -92,6 +92,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "priceVersion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -115,7 +128,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FundMe/FundMe_V2_ETH.sol": "FundMe"
+			"Contracts/FundMe.sol": "FundMe"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -137,20 +150,20 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"FundMe/FundMe_V2_ETH.sol": {
-			"keccak256": "0xd1c9fc2388871b121d57db8cc54af5ad702d0a159235f9a807f2192782b73b87",
+		"Contracts/FundMe.sol": {
+			"keccak256": "0x58557f86c43ddad40c6e482f0c01bb1e0be8525c0e356a93663ac4bb3adc8c11",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://27a6cae92d321c9e314d757372dcf791b4fd756bddcbe4e9d64a530b2b4bb1a7",
-				"dweb:/ipfs/QmT5rBTvwhjWYfV16T8YUHe6ewKUoq17PjHEnDPM3QBm9D"
+				"bzz-raw://1d17cb7c49cec14d1324152b964e01c6adfd4b72c1c26c7565c52fca29053670",
+				"dweb:/ipfs/QmURNX2JUPkRkQ8wBrFjmmQTcfwRtcyBPah4aqyxHJZnS7"
 			]
 		},
-		"FundMe/PriceConverter.sol": {
-			"keccak256": "0xa89d09fb66e5342b36f66a780fc9f610d1b67b7b9a9367882462792b9de7521b",
+		"Contracts/PriceConverter.sol": {
+			"keccak256": "0x677a8ef3a05d9a510ea78a57beedd0372218f43d2e93b15f668b1ed25b569d44",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://7bce93e7855a5409c9b1dbb93fc412742fc3e628f0d8ba3fcf32d938f6196c63",
-				"dweb:/ipfs/QmQ119HYTStrFFmDwfXDDGJ61z4TSPc4igMC16F2QhYiiF"
+				"bzz-raw://341fb3990ab85e9db583689bb244282d1ad5563830f585d506d8cd21f735e217",
+				"dweb:/ipfs/QmWqf6QZU1H4JyiCei4tZHm99afq47FN694mhXiCwruqn2"
 			]
 		}
 	},
