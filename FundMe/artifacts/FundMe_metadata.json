@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -79,12 +79,51 @@
 			},
 			{
 				"inputs": [],
+				"name": "iValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "i_owner",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumWEI",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "valueWEI",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -117,7 +156,7 @@
 		"compilationTarget": {
 			"FundMe/FundMe_V2_ETH.sol": "FundMe"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -138,19 +177,19 @@
 			]
 		},
 		"FundMe/FundMe_V2_ETH.sol": {
-			"keccak256": "0xd1c9fc2388871b121d57db8cc54af5ad702d0a159235f9a807f2192782b73b87",
+			"keccak256": "0x7bcb088c9c90f2d8ebbefa8bb3831f214a1c29e5d256d31b8b178b31e1564bce",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://27a6cae92d321c9e314d757372dcf791b4fd756bddcbe4e9d64a530b2b4bb1a7",
-				"dweb:/ipfs/QmT5rBTvwhjWYfV16T8YUHe6ewKUoq17PjHEnDPM3QBm9D"
+				"bzz-raw://0d1c50fb593724adb389072ee4ede99cb837ed5d7df79d81fdbeb7d3277391fc",
+				"dweb:/ipfs/Qmapkos2N6AVieDvGbSDwYvZoHv2F4wzF4Yg7ApdLTFzfg"
 			]
 		},
 		"FundMe/PriceConverter.sol": {
-			"keccak256": "0xa89d09fb66e5342b36f66a780fc9f610d1b67b7b9a9367882462792b9de7521b",
+			"keccak256": "0xa25721fe2753a0206caa56fea2f8eade9fc66f839f9096dff6707923ece00b08",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://7bce93e7855a5409c9b1dbb93fc412742fc3e628f0d8ba3fcf32d938f6196c63",
-				"dweb:/ipfs/QmQ119HYTStrFFmDwfXDDGJ61z4TSPc4igMC16F2QhYiiF"
+				"bzz-raw://ab805812584ef69176b96e4a49f70f57e3cd3063d136d9f984cf1feed4adbb75",
+				"dweb:/ipfs/QmUQqCgBwGEebYVZQmpCboWDJmi5Uwqdpji8Fqksgis2oL"
 			]
 		}
 	},

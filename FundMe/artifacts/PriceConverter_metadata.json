@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -20,7 +20,7 @@
 		"compilationTarget": {
 			"FundMe/PriceConverter.sol": "PriceConverter"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -41,11 +41,11 @@
 			]
 		},
 		"FundMe/PriceConverter.sol": {
-			"keccak256": "0xe1908ad161f6ee12dc972faf17df25cfa91b257e2225445cc4e56539e8392544",
+			"keccak256": "0xf9fd68ed17148b802a483dcbccfbf9a1a1d1d74c083c94e6767255e8d8bf354e",
 			"license": "MTT",
 			"urls": [
-				"bzz-raw://bda9c4647b280b14e42fbb3e14e731ac0aa6ab6f3741b73528c161dd7b1b5536",
-				"dweb:/ipfs/QmbU2LCywAdnjYEj7Qkb2pPN6Ts2oBPxtbk7U2GcV1F1KA"
+				"bzz-raw://4c9fe3315d7bb6ed25d29ebf2022e3c5f9f914504b1ac3e1c49d582a0d16cdf1",
+				"dweb:/ipfs/QmbxrCRnsD9p8Ey23xp1PYUBYHmEJ9TDmkrgoo5toHaGb4"
 			]
 		}
 	},
